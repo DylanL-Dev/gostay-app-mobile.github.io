@@ -351,7 +351,7 @@ body {
     opacity: 1;
   }
   
-  .fa-heart {
+  .fa-heart-like{
     color: #000033;
     transition: transform 0.3s ease-in-out;
   }
