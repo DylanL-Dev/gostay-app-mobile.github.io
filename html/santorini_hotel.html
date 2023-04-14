@@ -38,13 +38,13 @@
             </div>
           </div>
         </a>
-        <a href="#">
-          <div class="logo_header_2">
-            <div class="cercle">
-              <i class="fa-sharp fa-solid fa-share-nodes size_logo_header"></i>
-            </div>
+
+        <div class="logo_header_2" >
+          <div class="cercle" id="shareDiv">
+            <i class="fa-sharp fa-solid fa-share-nodes size_logo_header"></i>
           </div>
-        </a>
+        </div>
+
         <a href="#">
           <div class="logo_header_3">
             <div class="cercle">
@@ -154,5 +154,21 @@
         </div>
       </nav>
     </footer>
+    <script defer>
+      const shareDiv = document.getElementById("shareDiv");
+      if (navigator.share) {
+        shareDiv.addEventListener("click", () => {
+          navigator.share({
+            title: "Deluxe Hotel Santorini",
+            text: "Découvrez un séjour de rêve dans le somptueux Deluxe Hotel Santorini, où vous pourrez vous détendre et profiter d'une vue imprenable sur la mer Égée...En savoir plus",
+            url: "https://dylanl-dev.github.io/gostay-app-mobile.github.io/html/santorini_hotel.html",
+          });
+        });
+      } else {
+        console.log(
+          "Cette fonctionnalité nécessite un navigateur plus récent ou à jour"
+        );
+      }
+    </script>
   </body>
 </html>

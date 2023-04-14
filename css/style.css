@@ -313,15 +313,15 @@ body {
     position: absolute;
     top: 0;
     right: 6%;
-
     margin-top: 40px;
     color: #000033;
+    cursor: pointer;
   }
-
+  
   .size_logo_header {
     font-size: 20px;
   }
-
+  
   .cercle {
     display: flex;
     align-items: center;
@@ -330,6 +330,45 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+  }
+  
+  .cercle:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+  }
+
+  
+  
+  .cercle:hover:before {
+    opacity: 1;
+  }
+  
+  .fa-heart {
+    color: #000033;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cercle:hover .fa-heart {
+    animation: fa-heart 1s ease 0s 1 normal forwards;
+  }
+  
+  @keyframes fa-heart {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+      color:  #7e7a92;
+    }
   }
 
   .btn_header {
