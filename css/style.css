@@ -916,6 +916,58 @@ body {
   .opacite__descriptif {
     opacity: 0.6; /* Changé à 0.6 pour réduire l'opacité */
   }
+  .payment-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
 
+  .payment-form {
+    width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 12px; /* Ajustez la valeur selon vos besoins */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Ajustez la valeur selon vos besoins */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+  .price-payment {
+    padding-top: 15px;
+  }
+  button {
+    background-color: #4ca6fe;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+  #confirmation {
+    display: none;
+  }
   /* Footer profil */
 }
