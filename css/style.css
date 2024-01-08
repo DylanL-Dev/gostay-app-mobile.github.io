@@ -15,6 +15,7 @@ img {
 
 a {
   text-decoration: none !important;
+  cursor: none;
 }
 
 .opacite {
@@ -60,8 +61,8 @@ body {
 
   .logo_loader {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 
   .logo_loader img {
@@ -317,11 +318,11 @@ body {
     color: #000033;
     cursor: pointer;
   }
-  
+
   .size_logo_header {
     font-size: 20px;
   }
-  
+
   .cercle {
     display: flex;
     align-items: center;
@@ -331,7 +332,7 @@ body {
     height: 40px;
     border-radius: 50%;
   }
-  
+
   .cercle:before {
     content: "";
     position: absolute;
@@ -342,32 +343,29 @@ body {
     border-radius: 50%;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-
   }
 
-  
-  
   .cercle:hover:before {
     opacity: 1;
   }
-  
-  .fa-heart-like{
+
+  .fa-heart-like {
     color: #000033;
     transition: transform 0.3s ease-in-out;
   }
-  
+
   .cercle:hover .fa-heart {
     animation: fa-heart 1s ease 0s 1 normal forwards;
   }
-  
+
   @keyframes fa-heart {
     0% {
       transform: rotate(0);
     }
-  
+
     100% {
       transform: rotate(360deg);
-      color:  #7e7a92;
+      color: #7e7a92;
     }
   }
 
